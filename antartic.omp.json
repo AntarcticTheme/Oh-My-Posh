@@ -1,0 +1,81 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 2,
+  "final_space": true,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "time",
+          "style": "plain",
+          "foreground": "p:clock",
+          "template": "[{{ .CurrentDate | date .Format }}] ",
+          "properties": {
+            "time_format": "15:04:05"
+          }
+        },
+        {
+          "type": "session",
+          "style": "plain",
+          "foreground": "p:lightblue",
+          "template": "{{ .UserName }}"
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "p:pink",
+          "template": " on "
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "p:green",
+          "template": "{{ .Path}} ",
+          "properties": {
+            "folder_icon": "\ueaf7 ",
+            "home_icon": "\ueb06 ",
+            "style": "agnoster_short"
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "p:orange",
+          "template": "in {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0}}\ueb4b {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ .WorktreeCount }}{{ end }} ",
+          "properties": {
+            "branch_icon": "\ue725 ",
+            "cherry_pick_icon": "\ue29b ",
+            "commit_icon": "\uf417 ",
+            "fetch_status": true,
+            "fetch_upstream_icon": false,
+            "merge_icon": "\ue727 ",
+            "no_commits_icon": "\uf594 ",
+            "rebase_icon": "\ue728 ",
+            "revert_icon": "\uf0e2 ",
+            "tag_icon": "\uf412 "
+          }
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "p:pink",
+          "template": "❯"
+        }
+      ]
+    }
+  ],
+  "palette": {
+    "blue": "#344C59",
+    "clock": "#26BEC6",
+    "closer": "p:os",
+    "green": "#40B289",
+    "lavender": "#344C59",
+    "lightblue": "#50888C",
+    "orange": "#CD8120",
+    "os": "#50888C",
+    "pink": "#ad4d9b",
+    "red": "#99372C"
+  }
+}

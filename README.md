@@ -1,4 +1,4 @@
-# Antartic Windows Terminal
+# Antartic Oh My Posh
 Antartic for Oh My Posh.
 
 ## Installation 

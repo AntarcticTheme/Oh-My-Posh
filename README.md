@@ -14,7 +14,7 @@ Antarctic for Oh My Posh.
 5. Restart your terminal and done.
 
 ## Oh My Posh + Windows Terminal
-If you are using the Windows Terminal and want to integrate Antartic for Oh My Posh, follow this instructions.
+If you are using the Windows Terminal and want to integrate Antarctic for Oh My Posh, follow this instructions.
 
 Replace the contents of `"defaults"`
 ```pwsh
@@ -23,3 +23,4 @@ Replace the contents of `"defaults"`
         "defaults": {},
 ```
 with the contents of `windows-terminal-theme-OhMyPosh.json`.
+

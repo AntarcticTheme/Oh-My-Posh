@@ -24,3 +24,6 @@ Replace the contents of `"defaults"`
 ```
 with the contents of `windows-terminal-theme-OhMyPosh.json`.
 
+<h3 align="center">
+  <img src="https://github.com/AntarcticTheme/.github/blob/main/images/footer.png" alt="Footer"/><br/>
+</h3>

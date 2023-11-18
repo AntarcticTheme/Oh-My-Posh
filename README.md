@@ -1,6 +1,8 @@
 # Antarctic Oh My Posh
 Antarctic for Oh My Posh.
 
+Please refer to the [change log](https://github.com/AntarcticTheme/Oh-My-Posh/blob/main/CHANGELOG.md) for updates on our most recent modifications.
+
 ## Installation 
 1. Download and install [Nerd Fonts](https://www.nerdfonts.com/font-downloads). By default, it uses the [Hack Font](https://www.programmingfonts.org/#hack).
 2. Add the following line at the top of your Microsoft.PowerShell_profile.ps1 (If you don't have that, follow this [guide](https://lazyadmin.nl/powershell/powershell-profile/)).
